@@ -21,3 +21,11 @@ node_modules/
 *.log
 *.sql
 *.sqlite
+
+.DS_Store
+*.DS_Store
+
+.ftpconfig
+.ftpignore
+
+
