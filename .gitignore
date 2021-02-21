@@ -28,4 +28,5 @@ node_modules/
 .ftpconfig
 .ftpignore
 
-
+.htaccess.bk
+.htaccess
