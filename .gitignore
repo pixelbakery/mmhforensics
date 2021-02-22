@@ -25,6 +25,13 @@ xmlrpc.php
 node_modules/
 
 .eslintrc
+.stylelintrc.json
+*/languages
+*.json
+*.pot
+*.dist
+*.xml
+*/languages/*
 # ignore log files and databases
 *.log
 *.sql
