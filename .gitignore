@@ -42,6 +42,9 @@ wp-includes
 wp-admin
 .DS_Store
 *.DS_Store
+.stylelintrc
+.user.ini
+wordfence-waf.php
 
 .ftpconfig
 .ftpignore

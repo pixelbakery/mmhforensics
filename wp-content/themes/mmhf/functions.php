@@ -140,11 +140,13 @@ add_action( 'widgets_init', 'mmhf_widgets_init' );
  * Enqueue scripts and styles.
  */
 function mmhf_scripts() {
-	wp_enqueue_style( 'mmhf-bootstrap','https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css', array(), _S_VERSION );
+	wp_enqueue_style( 'mmhf-bootstrap','https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css', array());
 	wp_enqueue_style( 'mmhf-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_enqueue_style( 'mmhf-googlefonts','https://fonts.googleapis.com/css2?family=Poppins&family=Space+Grotesk&display=swap', array(), _S_VERSION );
+	wp_enqueue_style( 'mmhf-googlefonts','https://fonts.googleapis.com/css2?family=Poppins&family=Space+Grotesk&display=swap', array());
 	wp_style_add_data( 'mmhf-style', 'rtl', 'replace' );
-	wp_enqueue_script( 'mmhf-bootstrapjs', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js', array(), _S_VERSION, true );
+	wp_enqueue_style( 'mmhf-pbstyle',get_stylesheet_directory_uri() . '/assets/pb-style.css', array(), _S_VERSION );
+	wp_enqueue_script( 'mmhf-bootstrapjs', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js', array(), true );
+	wp_enqueue_script('mmhf-fontawesome', 'https://kit.fontawesome.com/87040b45a5.js', array());
 
 	wp_enqueue_script( 'mmhf-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
@@ -153,6 +155,10 @@ function mmhf_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'mmhf_scripts' );
+/**
+ * Load Custom Post Types
+ */
+require get_template_directory() . '/inc/CPT-videos.php';
 
 /**
  * Implement the Custom Header feature.
@@ -247,3 +253,10 @@ function fix_svg() {
 }
 add_action( 'admin_head', 'fix_svg' );
 // END ALLOW SVGS
+function add_additional_class_on_li($classes, $item, $args) {
+    if(isset($args->add_li_class)) {
+        $classes[] = $args->add_li_class;
+    }
+    return $classes;
+}
+add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
