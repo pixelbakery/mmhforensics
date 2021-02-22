@@ -24,12 +24,15 @@ xmlrpc.php
 # ignore node dependency directories
 node_modules/
 
+.eslintrc
 # ignore log files and databases
 *.log
 *.sql
 *.sqlite
 wp-admin/*
 wp-includes/*
+wp-includes
+wp-admin
 .DS_Store
 *.DS_Store
 
