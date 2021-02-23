@@ -95,8 +95,30 @@ p.card-text.color-light {
 	font-weight: 600;
 }
 
+.underline-primary {
+	padding-bottom: 1em;
+	border-bottom: 3px solid var(--color-primary);
+}
+
+.underline-light {
+	padding-bottom: 1em;
+	border-bottom: 3px solid var(--color-white);
+}
+
+.cpt-video-section.bg-dark p,
+.cpt-video-section.bg-dark h5,
+.cpt-video-section.bg-dark p.lead {
+	color: rgba(255, 255, 255, 0.86);
+}
+
+.cpt-video-section.bg-dark p.muted {
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.55);
+}
+
 p.card-text.color-light,
-.card-icon.color-light i {
+.card-icon.color-light i,
+.color-light {
 	color: rgba(255, 255, 255, 0.86);
 }
 
