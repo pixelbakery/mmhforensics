@@ -140,20 +140,29 @@ add_action( 'widgets_init', 'mmhf_widgets_init' );
  * Enqueue scripts and styles.
  */
 function mmhf_scripts() {
+	// CSS
 	wp_enqueue_style( 'mmhf-bootstrap','https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css', array());
 	wp_enqueue_style( 'mmhf-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_enqueue_style( 'mmhf-googlefonts','https://fonts.googleapis.com/css2?family=Poppins&family=Space+Grotesk&display=swap', array());
 	wp_style_add_data( 'mmhf-style', 'rtl', 'replace' );
+	wp_enqueue_style( 'mmhf-flickity', 'https://unpkg.com/flickity@2/dist/flickity.min.css', array(), _S_VERSION );
 	wp_enqueue_style( 'mmhf-pbstyle',get_stylesheet_directory_uri() . '/assets/pb-style.css', array(), _S_VERSION );
+
+// JAVASCRIPT
 	wp_enqueue_script( 'mmhf-bootstrapjs', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js', array(), true );
 	wp_enqueue_script('mmhf-fontawesome', 'https://kit.fontawesome.com/87040b45a5.js', array());
-
+	wp_enqueue_script( 'mmhf-pbscripts', get_stylesheet_directory_uri() . '/js/pb-general-scripts.js', array(), true );
 	wp_enqueue_script( 'mmhf-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'mmhf-gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'mmhf-gsap-scrolltrigger', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'mmhf-flickity', 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'mmhf-isotopes', 'https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
+
 add_action( 'wp_enqueue_scripts', 'mmhf_scripts' );
 /**
  * Load Custom Post Types
@@ -292,5 +301,5 @@ function get_primary_category($category){
     }
   }
 }
-    
+
 // END PRIMARY POST CATEGORY

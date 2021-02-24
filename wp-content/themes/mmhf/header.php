@@ -34,7 +34,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 	    <div class="collapse navbar-collapse w-100 d-flex justify-content-between" id="navbarTogglerDemo01">
-      <a class="navbar-brand" href="#"><img src="<?php echo esc_url($primary_logo['url']);?>"/ class="img-fluid w-100"></a>
+      <a class="navbar-brand" href="/"><img src="<?php echo esc_url($primary_logo['url']);?>"/ class="img-fluid w-100"></a>
 <?php
  ?>
 
@@ -67,5 +67,5 @@
     </div>
   </div>
 </nav>
-		
+
 	</header><!-- #masthead -->
