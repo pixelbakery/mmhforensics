@@ -44,29 +44,29 @@ get_header('home');
   </div>
 <main id="primary" class="site-main container-fluid px-0">
   <section class="container-fluid vh-100 d-flex justify-content-center align-items-center text-center bg-light">
-    <h1>Landing Hero Section</h1>
+    <h1 class="color-dark ">Landing Hero Section</h1>
   </section>
   <section class=" py-5 my-5 container-fluid">
     <article class="container">
       <div class="row">
         <div class="col-6">
           <h1>Using Science To Do Good</h1>
-          <p>
+          <p class="color-dark ">
             what we do matters. We’re trusted in the community because of our rigid and streamlined core values.
           </p>
         </div>
       </div>
       <div class="row">
         <div class="col-4">
-          <div class="card border-0">
+          <div class="card border-0 bg-dark">
             <div class="row g-0">
               <div class="col-md-2 px-1 text-center pt-2">
-                <img class="pt-1" src="<?php echo get_stylesheet_directory_uri() . "/assets/icons/comment-medical-solid.svg";?>" alt="...">
+                <img class="pt-1 science-icon" src="<?php echo get_stylesheet_directory_uri() . "/assets/icons/comment-medical-solid.svg";?>" alt="...">
               </div>
               <div class="col-md-10">
                 <div class="card-body pt-0">
                   <h5 class="card-title color-primary mb-3">Science You Can Trust</h5>
-                  <p class="card-text">Assertively streamline cutting-edge paradigms vis-a-vis  display synergistic.</p>
+                  <p class="card-text ">Assertively streamline cutting-edge paradigms vis-a-vis  display synergistic.</p>
 
                 </div>
               </div>
@@ -74,15 +74,15 @@ get_header('home');
         </div>
       </div>
       <div class="col-4">
-        <div class="card border-0">
+        <div class="card border-0 bg-dark">
           <div class="row g-0">
             <div class="col-md-2 px-1 text-center pt-2">
-              <img class="pt-1" src="<?php echo get_stylesheet_directory_uri() . "/assets/icons/comment-medical-solid.svg";?>" alt="...">
+              <img class="pt-1 science-icon" src="<?php echo get_stylesheet_directory_uri() . "/assets/icons/comment-medical-solid.svg";?>" alt="...">
             </div>
             <div class="col-md-10">
               <div class="card-body pt-0">
                 <h5 class="card-title color-primary mb-3">Science You Can Trust</h5>
-                <p class="card-text">Assertively streamline cutting-edge paradigms vis-a-vis  display synergistic.</p>
+                <p class="card-text ">Assertively streamline cutting-edge paradigms vis-a-vis  display synergistic.</p>
 
               </div>
             </div>
@@ -90,15 +90,15 @@ get_header('home');
       </div>
     </div>
     <div class="col-4">
-      <div class="card border-0">
+      <div class="card border-0 bg-dark">
         <div class="row g-0">
           <div class="col-md-2 px-1 text-center pt-2">
-            <img class="pt-1" src="<?php echo get_stylesheet_directory_uri() . "/assets/icons/comment-medical-solid.svg";?>" alt="...">
+            <img class="pt-1 science-icon" src="<?php echo get_stylesheet_directory_uri() . "/assets/icons/comment-medical-solid.svg";?>" alt="...">
           </div>
           <div class="col-md-10">
             <div class="card-body pt-0">
               <h5 class="card-title color-primary mb-3">Science You Can Trust</h5>
-              <p class="card-text">Assertively streamline cutting-edge paradigms vis-a-vis  display synergistic.</p>
+              <p class="card-text ">Assertively streamline cutting-edge paradigms vis-a-vis  display synergistic.</p>
 
             </div>
           </div>
@@ -106,10 +106,10 @@ get_header('home');
     </div>
   </div>
   <div class="col-4">
-    <div class="card border-0">
+    <div class="card border-0 bg-dark">
       <div class="row g-0">
         <div class="col-md-2 px-1 text-center pt-2">
-          <img class="pt-1" src="<?php echo get_stylesheet_directory_uri() . "/assets/icons/comment-medical-solid.svg";?>" alt="...">
+          <img class="pt-1 science-icon" src="<?php echo get_stylesheet_directory_uri() . "/assets/icons/comment-medical-solid.svg";?>" alt="...">
         </div>
         <div class="col-md-10">
           <div class="card-body pt-0">
@@ -122,15 +122,15 @@ get_header('home');
   </div>
 </div>
 <div class="col-4">
-  <div class="card border-0">
+  <div class="card border-0 bg-dark">
     <div class="row g-0">
       <div class="col-md-2 px-1 text-center pt-2">
-        <img class="pt-1" src="<?php echo get_stylesheet_directory_uri() . "/assets/icons/comment-medical-solid.svg";?>" alt="...">
+        <img class="pt-1 science-icon" src="<?php echo get_stylesheet_directory_uri() . "/assets/icons/comment-medical-solid.svg";?>" alt="...">
       </div>
       <div class="col-md-10">
         <div class="card-body pt-0">
           <h5 class="card-title color-primary mb-3">Science You Can Trust</h5>
-          <p class="card-text">Assertively streamline cutting-edge paradigms vis-a-vis  display synergistic.</p>
+          <p class="card-text ">Assertively streamline cutting-edge paradigms vis-a-vis  display synergistic.</p>
 
         </div>
       </div>
@@ -138,10 +138,10 @@ get_header('home');
 </div>
 </div>
 <div class="col-4">
-  <div class="card border-0">
+  <div class="card border-0 bg-dark">
     <div class="row g-0">
       <div class="col-md-2 px-1 text-center pt-2">
-        <img class="pt-1" src="<?php echo get_stylesheet_directory_uri() . "/assets/icons/comment-medical-solid.svg";?>" alt="...">
+        <img class="pt-1 science-icon" src="<?php echo get_stylesheet_directory_uri() . "/assets/icons/comment-medical-solid.svg";?>" alt="...">
       </div>
       <div class="col-md-10">
         <div class="card-body pt-0">
@@ -157,9 +157,9 @@ get_header('home');
 
   </article>
   </section>
-  <section class=" vh-100 container-fluid d-flex">
+  <section class="container-fluid d-flex">
     <div class="flex-fill w-50 bg-primary d-flex flex-column justify-content-center align-items-middle">
-      <div class="container p-5 m-2">
+      <div class="container p-5 m-2 ">
         <h1>Forward. Together.</h1>
         <p>
           Professionally transition seamless potentialities through sticky quality vectors. Dynamically leverage existing emerging methodologies and high standards in vortals. </p>
@@ -260,7 +260,7 @@ get_header('home');
       </div>
     </div>
   </section>
-  <section class=" vh-100 container-fluid bg-light d-flex flex-column justify-content-center">
+  <section class=" vh-100 container-fluid bg-dark d-flex flex-column justify-content-center">
     <div class="container">
       <div class="row px-5">
         <div class="col-6 d-flex flex-column justify-content-between px-5">
