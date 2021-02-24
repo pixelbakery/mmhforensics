@@ -121,9 +121,9 @@ ginaw@athabascau.ca</p>
 				</div>
 		</div><!-- .site-info -->
 		<span class="line"></span>
-		<div class="row">
-			<div class="col-4">
-				<p class="">Copyright ©<?php echo date("Y");?>, All Rights Reserved <a href="/">MMH FORENSICS</a>.</p>
+		<div class="row py-2 pt-4">
+			<div class="col-12  text-center">
+				<p class="pb-1 mb-1">Copyright ©<?php echo date("Y");?>, All Rights Reserved <a href="/">MMH FORENSICS</a>.</p>
 				<p class="footer-credits">
 					Website Made W/ Love & Flour By <a href="https://pixelbakery.com" target="_blank">Pixel Bakery Design Studio</a>.
 				</p>

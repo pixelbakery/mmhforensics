@@ -12,7 +12,7 @@
  * @package MMH_Forensics
  */
 
-get_header();
+get_header('home');
 ?>
 <div class="container mx-0 vh-100 my-0  glowystuff-wrapper" >
     <div class="graph-holder position-relative">
