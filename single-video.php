@@ -102,7 +102,7 @@ $primary_category = get_primary_category($category);
 
   </section>
   <?php endif; ?>
-  <?php if(comments_open() === true): ?>
+  <?php if(comments_open() || get_comments_number()): ?>
   <section class="bg-primary container-fluid py-4 my-0">
     <div class="container">
       <div class="row">

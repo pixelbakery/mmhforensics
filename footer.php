@@ -83,19 +83,19 @@
 							<div>
 								<i class="fas fa-phone-alt"></i>
 							</div>
-
+								<!-- TODO: Add ACF Footer Setting for Phone -->
 							<ul class="list-unstyled list-inline d-flex w-100">
 								<li class="list-inline-item flex-fill">
 									<p class="text-right pb-0 mb-0">Edmonton</p>
-									<a>780.434.5856</a>
+									<a class="color-white">780.434.5856</a>
 								</li>
 								<li class="list-inline-item flex-fill">
 									<p class="text-right pb-0 mb-0">Fax</p>
-									<a>780.434.5856</a>
+									<a class="color-white">780.434.5856</a>
 								</li>
 								<li class="list-inline-item flex-fill">
 									<p class="text-right pb-0 mb-0">Toll-Free Canada</p>
-									<a>780.434.5856</a>
+									<a class="color-white">780.434.5856</a>
 								</li>
 							</ul>
 						</div>
@@ -106,11 +106,12 @@
 
 							<ul class="list-unstyled">
 								<li >
-									<p class="text-right pb-0 mb-0">ginapsychologist@gmail.com</p>
+									<!-- TODO: Add ACF Footer Setting for Email -->
+									<p class="text-right pb-0 mb-0 color-white">ginapsychologist@gmail.com</p>
 
 								</li>
 								<li >
-									<p class="text-right pb-0 mb-0">
+									<p class="text-right pb-0 mb-0 color-white">
 ginaw@athabascau.ca</p>
 
 								</li>
@@ -122,9 +123,9 @@ ginaw@athabascau.ca</p>
 		</div><!-- .site-info -->
 		<span class="line"></span>
 		<div class="row py-2 pt-4">
-			<div class="col-12  text-center">
-				<p class="pb-1 mb-1">Copyright ©<?php echo date("Y");?>, All Rights Reserved <a href="/">MMH FORENSICS</a>.</p>
-				<p class="footer-credits">
+			<div class="col-12  text-center d-flex flex-column justify-content-center">
+				<p class="mx-auto mb-1 pb-0 text-center">Copyright ©<?php echo date("Y");?>, All Rights Reserved <a href="/">MMH FORENSICS</a>.</p>
+				<p class="mx-auto footer-credits pt-0 mt-0 text-center">
 					Website Made W/ Love & Flour By <a href="https://pixelbakery.com" target="_blank">Pixel Bakery Design Studio</a>.
 				</p>
 			</div>

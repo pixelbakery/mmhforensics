@@ -141,12 +141,12 @@ add_action( 'widgets_init', 'mmhf_widgets_init' );
  */
 function mmhf_scripts() {
 	// CSS
-	wp_enqueue_style( 'mmhf-bootstrap','https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css', array());
+	// wp_enqueue_style( 'mmhf-bootstrap','https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css', array());
 	wp_enqueue_style( 'mmhf-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_enqueue_style( 'mmhf-googlefonts','https://fonts.googleapis.com/css2?family=Poppins&family=Space+Grotesk&display=swap', array());
 	wp_style_add_data( 'mmhf-style', 'rtl', 'replace' );
 	wp_enqueue_style( 'mmhf-flickity', 'https://unpkg.com/flickity@2/dist/flickity.min.css', array(), _S_VERSION );
-	wp_enqueue_style( 'mmhf-pbstyle',get_stylesheet_directory_uri() . '/assets/pb-style.css', array(), _S_VERSION );
+	wp_enqueue_style( 'mmhf-pbstyle',get_stylesheet_directory_uri() . '/assets/css/pb-style.css', array(), _S_VERSION );
 
 // JAVASCRIPT
 	wp_enqueue_script( 'mmhf-bootstrapjs', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js', array(), true );
@@ -202,6 +202,10 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+/**
+ * Load Custom Comments Layout file.
+ */
+require get_template_directory() . '/inc/comment-helper.php';
 
 // Create Theme Options page
 if( function_exists('acf_add_options_page') ) {
@@ -303,3 +307,95 @@ function get_primary_category($category){
 }
 
 // END PRIMARY POST CATEGORY
+
+
+
+function last_updated(){
+	$u_time = get_the_time('U');
+	$u_modified_time = get_the_modified_time('U');
+	if ($u_modified_time >= $u_time + 86400) {
+		echo ",</br> Last updated on <time>" . get_the_modified_time('F jS, Y') . "</time>.";
+	}
+	else{ return; }
+}
+function check_category(){
+	$cat = get_the_category();
+	if(! empty( $cat ) && esc_html( $cat[0]->name ) != 'Uncategorized'){
+		return "Categorized as " . esc_html( $cat[0]->name ) . '</br>';
+	}
+	else{ return; }
+}
+function aspect_ratio($ratio){
+	switch($ratio){
+		case '1x1':
+			 return "ratio ratio-1x1";
+		break;
+
+		case '4x3':
+			return "ratio ratio-4x3";
+		break;
+
+		case '2x1':
+			return "ratio ratio-2x1";
+		break;
+
+		case '16x9':
+			return "ratio ratio-16x9";
+		break;
+
+		case '21x9':
+			return "ratio ratio-21x9";
+		break;
+
+	}
+		return "ratio ratio-4x3";
+}
+
+function be_display_image_and_caption($ratio) {
+	$get_ratio = aspect_ratio($ratio);
+	echo '<figure class="post-featured-figure">';
+	echo '<div class="post-featured-figure-wrapper ' . $get_ratio . '">';
+	echo the_post_thumbnail( 'post-thumbnail', ['class' => 'img-fluid post-featured-image'] );
+	echo '</div>';
+	echo '<figcaption class="featured-image-caption">' . get_post( get_post_thumbnail_id() )->post_excerpt . '</figcaption>';
+	echo '</figure>';
+}
+
+//Comment Field Order
+add_filter( 'comment_form_fields', 'pb_comment_fields_custom_order' );
+function pb_comment_fields_custom_order( $fields ) {
+    $comment_field = $fields['comment'];
+    $author_field = $fields['author'];
+    $email_field = $fields['email'];
+	  $city_field = $fields['city'];
+    $url_field = $fields['url'];
+    $cookies_field = $fields['cookies'];
+    unset( $fields['comment'] );
+    unset( $fields['author'] );
+    unset( $fields['email'] );
+		unset( $fields['city'] );
+    unset( $fields['url'] );
+    unset( $fields['cookies'] );
+    // the order of fields is the order below, change it as needed:
+    $fields['author'] = $author_field;
+    $fields['email'] = $email_field;
+    $fields['url'] = $url_field;
+		$fields['city'] = $city_field;
+    $fields['comment'] = $comment_field;
+    $fields['cookies'] = $cookies_field;
+    // done ordering, now return the fields:
+    return $fields;
+}
+
+add_action( 'comment_post',	'save_comment_meta_data' );
+function save_comment_meta_data( $comment_id ) {
+    $city = wp_filter_kses( sanitize_text_field( $_POST['city'] ));
+    add_comment_meta( $comment_id, 'city', $city );
+}
+add_filter( 'get_comment_author_link',	'attach_city_to_author' );
+function attach_city_to_author( $author ) {
+  $city = get_comment_meta( get_comment_ID(), 'city', true );
+  if ( $city )
+    $author .= " from ($city)";
+	return $author;
+}

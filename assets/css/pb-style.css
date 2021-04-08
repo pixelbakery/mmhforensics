@@ -10768,9 +10768,8 @@ main {
   overflow-x: hidden;
 }
 
-.page,
-.post {
-  margin: 0;
+.ratio.ratio-2x1 {
+  --bs-aspect-ratio: 50%;
 }
 
 /* TYPOGRAPHY */
@@ -10821,12 +10820,19 @@ h1, .h1 {
 h1 .span, .h1 .span {
   background-color: #020213;
 }
-h1 .display-1, .h1 .display-1 {
+h1.display-1, .display-1.h1 {
   font-size: 5rem;
   font-weight: 900;
   line-height: 0.95em;
   margin-top: 0;
   margin-bottom: 0;
+}
+h1.display-2, .display-2.h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 0.95em;
+  margin-top: 0;
+  text-transform: capitalize;
 }
 
 span.underline {
@@ -10906,8 +10912,12 @@ h5.card-title, .card-title.h5 {
   color: #020213;
 }
 
+.color-offWhite {
+  color: #fafafa;
+}
+
 .bg-primary {
-  background: #da3742;
+  background: #da3742 !important;
 }
 
 .bg-dark {
@@ -10915,6 +10925,18 @@ h5.card-title, .card-title.h5 {
 }
 .bg-dark a {
   color: #fff;
+}
+
+.bg-offWhite {
+  background: #fafafa;
+}
+
+.bg-salmon {
+  background: salmon;
+}
+
+.salmon {
+  background: salmon;
 }
 
 img.science-icon {
@@ -11333,8 +11355,8 @@ footer .subscribe-form {
 footer .subscribe-form input {
   width: 100%;
   padding: 14px 28px;
-  background: #2e2e2e;
-  border: 1px solid #2e2e2e;
+  background: #292929;
+  border: 1px solid #292929;
   color: #fff;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -11373,6 +11395,146 @@ footer .contactinfo i {
   display: inline-block;
   padding: 10px;
   border-radius: 4px;
+}
+
+.post-header-content {
+  max-width: 1200px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.post-header-content .post-subtitle {
+  opacity: 0.88;
+  font-weight: 400;
+  padding-top: 1rem;
+}
+.post-header-content p.post-postdate {
+  width: 100%;
+  opacity: 0.88;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  font-size: 0.9em;
+}
+.post-header-content p.post-postdate time {
+  color: #da3742;
+}
+
+.post-tags-wrapper, .post-content-container {
+  max-width: 680px;
+}
+
+.post-tags-wrapper {
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.post-tags-wrapper span.h5 {
+  padding: 6px 12px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 100%;
+  border: 2px solid #020213;
+  padding: 6px 12px;
+  font-family: "poppins", sans-serif;
+  vertical-align: middle;
+  margin: 6px 10px;
+}
+.post-tags-wrapper .post-tag {
+  padding: 6px 12px;
+  margin: 4px 10px;
+  vertical-align: middle;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  line-height: 1em;
+}
+
+.post-content-container {
+  width: 100%;
+}
+.post-content-container * {
+  color: #292929;
+  display: block;
+}
+.post-content-container p, .post-content-container a {
+  font-weight: normal;
+  letter-spacing: -0.003em;
+  font-size: 21px;
+  line-height: 32px;
+  margin-block-end: -9.66px;
+  margin-block-start: 42px;
+  margin-bottom: -0.46em;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 2em;
+  overflow-wrap: break-word;
+  text-rendering: optimizelegibility;
+  word-break: break-word;
+  -webkit-font-smoothing: antialiased;
+}
+.post-content-container a {
+  color: #da3742;
+  opacity: 100%;
+  transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  filter: brightness(100%);
+  text-decoration: underline;
+}
+.post-content-container a:hover {
+  filter: brightness(50%);
+}
+
+@media (min-width: 576px) {
+  .post-header-content {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+  }
+
+  .post-content-container {
+    max-width: 680px;
+  }
+}
+@media (min-width: 768px) {
+  .post-header-content {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+}
+@media (min-width: 992px) {
+  .post-header-content {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .post-header-content {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+figure.post-featured-figure {
+  width: 100%;
+}
+
+figure.post-featured-figure .post-featured-figure-wrapper img.post-featured-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+figure.post-featured-figure figcaption.featured-image-caption {
+  text-align: center;
+  padding: 1.22rem 1.22rem;
+  color: #fff;
+  font-family: "poppins", sans-serif;
+  font-size: 0.88em;
+  opacity: 0.66;
+  width: 100%;
 }
 
 /*# sourceMappingURL=pb-style.css.map */
