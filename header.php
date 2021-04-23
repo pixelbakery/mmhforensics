@@ -34,7 +34,18 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 	    <div class="collapse navbar-collapse w-100 d-flex justify-content-between" id="navbarTogglerDemo01">
-      <a class="navbar-brand" href="/"><img src="<?php echo esc_url($primary_logo['url']);?>"/ class="img-fluid  logo"></a>
+      <a class="navbar-brand align-middle d-flex justify-content-center align-content-center" href="/">
+				<img src="<?php echo esc_url($primary_logo['url']);?>"/ class="d-inline-block align-text-center">
+					<div class="d-flex flex-column justify-content-center py-4 ">
+						<span>The Centre for</span>
+						<p class="my-0 py-0">
+							 Perinatal Psychology <br /> & Forensics Internatonal
+						</p>
+					</div>
+
+
+
+			</a>
 
 
 

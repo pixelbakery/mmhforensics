@@ -87,15 +87,11 @@
 							<ul class="list-unstyled list-inline d-flex w-100">
 								<li class="list-inline-item flex-fill">
 									<p class="text-right pb-0 mb-0">Edmonton</p>
-									<a class="color-white">780.434.5856</a>
-								</li>
-								<li class="list-inline-item flex-fill">
-									<p class="text-right pb-0 mb-0">Fax</p>
-									<a class="color-white">780.434.5856</a>
+									<a href="tel:7802208610"  class="color-white">780.220.8610</a>
 								</li>
 								<li class="list-inline-item flex-fill">
 									<p class="text-right pb-0 mb-0">Toll-Free Canada</p>
-									<a class="color-white">780.434.5856</a>
+									<a href="tel:18664423089" class="color-white">1.866.442.3089</a>
 								</li>
 							</ul>
 						</div>
@@ -107,14 +103,11 @@
 							<ul class="list-unstyled">
 								<li >
 									<!-- TODO: Add ACF Footer Setting for Email -->
-									<p class="text-right pb-0 mb-0 color-white">ginapsychologist@gmail.com</p>
+									<p class="text-right pb-0 mb-0">Email</p>
+									<a href="mailto:ginapsychologist@gmail.com" class="color-white">ginapsychologist@gmail.com</a>
 
 								</li>
 								<li >
-									<p class="text-right pb-0 mb-0 color-white">
-ginaw@athabascau.ca</p>
-
-								</li>
 
 							</ul>
 						</div>
