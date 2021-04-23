@@ -14,7 +14,7 @@ get_header();
         <img src="<?php echo get_stylesheet_directory_uri() . "/assets/images/Gina_book.png";?>" alt="book" class=" img-fluid book"/>
       </div>
       <div class="col-5  text-left">
-        <h1 class="display-1 text-left">Infantcide and Filicide</h1>
+        <h1 class="display-1 text-left">Our Team</h1>
         <p class="text-left">
           Energistically aggregate team building systems vis-a-vis diverse web-readiness. Continually conceptualize best-of-breed meta-services with plug-and-play e-business. Rapidiously coordinate out-of-the-box testing procedures vis-a-vis ethical.
         </p>

@@ -50,126 +50,124 @@ get_header('home');
     <article class="container">
       <div class="row">
         <div class="col-6">
-          <h1>Using Science To Do Good</h1>
-          <p class="color-dark ">
+          <h1 class="display-1">Using Science To Do Good</h1>
+          <p class="color-light mt-1 ">
             what we do matters. We’re trusted in the community because of our rigid and streamlined core values.
           </p>
         </div>
       </div>
       <div class="row">
-        <div class="col-4">
-          <div class="card border-0 bg-dark">
+        <div class="col-4 my-3">
+          <div class="card border-0 bg-dark my-3 pb-2 pt-4 px-1">
             <div class="row g-0">
-              <div class="col-md-2 px-1 text-center pt-2">
-                <img class="pt-1 science-icon" src="<?php echo get_stylesheet_directory_uri() . "/assets/icons/comment-medical-solid.svg";?>" alt="...">
+              <div class="col-md-3 text-center px-1 d-flex flex-column justify-content-center align-items-center text-center">
+                <img class="px-3  science-icon" src="<?php echo get_stylesheet_directory_uri() . "/assets/icons/comment-medical-solid.svg";?>" alt="...">
               </div>
-              <div class="col-md-10">
+              <div class="col-md-9">
                 <div class="card-body pt-0">
                   <h5 class="card-title color-primary mb-3">Science You Can Trust</h5>
                   <p class="card-text ">Assertively streamline cutting-edge paradigms vis-a-vis  display synergistic.</p>
 
                 </div>
               </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-4">
-        <div class="card border-0 bg-dark">
-          <div class="row g-0">
-            <div class="col-md-2 px-1 text-center pt-2">
-              <img class="pt-1 science-icon" src="<?php echo get_stylesheet_directory_uri() . "/assets/icons/comment-medical-solid.svg";?>" alt="...">
-            </div>
-            <div class="col-md-10">
-              <div class="card-body pt-0">
-                <h5 class="card-title color-primary mb-3">Science You Can Trust</h5>
-                <p class="card-text ">Assertively streamline cutting-edge paradigms vis-a-vis  display synergistic.</p>
+        <div class="col-4 my-3">
+          <div class="card border-0 bg-dark my-3 pb-2 pt-4 px-1">
+            <div class="row g-0">
+              <div class="col-md-3 text-center px-1 d-flex flex-column justify-content-center align-items-center text-center">
+                <img class="px-3  science-icon" src="<?php echo get_stylesheet_directory_uri() . "/assets/icons/comment-medical-solid.svg";?>" alt="...">
+              </div>
+              <div class="col-md-9">
+                <div class="card-body pt-0">
+                  <h5 class="card-title color-primary mb-3">Science You Can Trust</h5>
+                  <p class="card-text ">Assertively streamline cutting-edge paradigms vis-a-vis  display synergistic.</p>
 
+                </div>
               </div>
             </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-4">
-      <div class="card border-0 bg-dark">
-        <div class="row g-0">
-          <div class="col-md-2 px-1 text-center pt-2">
-            <img class="pt-1 science-icon" src="<?php echo get_stylesheet_directory_uri() . "/assets/icons/comment-medical-solid.svg";?>" alt="...">
           </div>
-          <div class="col-md-10">
-            <div class="card-body pt-0">
-              <h5 class="card-title color-primary mb-3">Science You Can Trust</h5>
-              <p class="card-text ">Assertively streamline cutting-edge paradigms vis-a-vis  display synergistic.</p>
+        </div>
+        <div class="col-4 my-3">
+          <div class="card border-0 bg-dark my-3 pb-2 pt-4 px-1">
+            <div class="row g-0">
+              <div class="col-md-3 text-center px-1 d-flex flex-column justify-content-center align-items-center text-center">
+                <img class="px-3  science-icon" src="<?php echo get_stylesheet_directory_uri() . "/assets/icons/comment-medical-solid.svg";?>" alt="...">
+              </div>
+              <div class="col-md-9">
+                <div class="card-body pt-0">
+                  <h5 class="card-title color-primary mb-3">Science You Can Trust</h5>
+                  <p class="card-text ">Assertively streamline cutting-edge paradigms vis-a-vis  display synergistic.</p>
 
+                </div>
+              </div>
             </div>
           </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-4">
-    <div class="card border-0 bg-dark">
-      <div class="row g-0">
-        <div class="col-md-2 px-1 text-center pt-2">
-          <img class="pt-1 science-icon" src="<?php echo get_stylesheet_directory_uri() . "/assets/icons/comment-medical-solid.svg";?>" alt="...">
         </div>
-        <div class="col-md-10">
-          <div class="card-body pt-0">
-            <h5 class="card-title color-primary mb-3">Science You Can Trust</h5>
-            <p class="card-text">Assertively streamline cutting-edge paradigms vis-a-vis  display synergistic.</p>
+        <div class="col-4 my-3">
+          <div class="card border-0 bg-dark my-3 pb-2 pt-4 px-1">
+            <div class="row g-0">
+              <div class="col-md-3 text-center px-1 d-flex flex-column justify-content-center align-items-center text-center">
+                <img class="px-3  science-icon" src="<?php echo get_stylesheet_directory_uri() . "/assets/icons/comment-medical-solid.svg";?>" alt="...">
+              </div>
+              <div class="col-md-9">
+                <div class="card-body pt-0">
+                  <h5 class="card-title color-primary mb-3">Science You Can Trust</h5>
+                  <p class="card-text ">Assertively streamline cutting-edge paradigms vis-a-vis  display synergistic.</p>
 
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-    </div>
-  </div>
-</div>
-<div class="col-4">
-  <div class="card border-0 bg-dark">
-    <div class="row g-0">
-      <div class="col-md-2 px-1 text-center pt-2">
-        <img class="pt-1 science-icon" src="<?php echo get_stylesheet_directory_uri() . "/assets/icons/comment-medical-solid.svg";?>" alt="...">
-      </div>
-      <div class="col-md-10">
-        <div class="card-body pt-0">
-          <h5 class="card-title color-primary mb-3">Science You Can Trust</h5>
-          <p class="card-text ">Assertively streamline cutting-edge paradigms vis-a-vis  display synergistic.</p>
+        <div class="col-4 my-3">
+          <div class="card border-0 bg-dark my-3 pb-2 pt-4 px-1">
+            <div class="row g-0">
+              <div class="col-md-3 text-center px-1 d-flex flex-column justify-content-center align-items-center text-center">
+                <img class="px-3  science-icon" src="<?php echo get_stylesheet_directory_uri() . "/assets/icons/comment-medical-solid.svg";?>" alt="...">
+              </div>
+              <div class="col-md-9">
+                <div class="card-body pt-0">
+                  <h5 class="card-title color-primary mb-3">Science You Can Trust</h5>
+                  <p class="card-text ">Assertively streamline cutting-edge paradigms vis-a-vis  display synergistic.</p>
 
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-  </div>
-</div>
-</div>
-<div class="col-4">
-  <div class="card border-0 bg-dark">
-    <div class="row g-0">
-      <div class="col-md-2 px-1 text-center pt-2">
-        <img class="pt-1 science-icon" src="<?php echo get_stylesheet_directory_uri() . "/assets/icons/comment-medical-solid.svg";?>" alt="...">
-      </div>
-      <div class="col-md-10">
-        <div class="card-body pt-0">
-          <h5 class="card-title color-primary mb-3">Science You Can Trust</h5>
-          <p class="card-text">Assertively streamline cutting-edge paradigms vis-a-vis  display synergistic.</p>
+        <div class="col-4 my-3">
+          <div class="card border-0 bg-dark my-3 pb-2 pt-4 px-1">
+            <div class="row g-0">
+              <div class="col-md-3 text-center px-1 d-flex flex-column justify-content-center align-items-center text-center">
+                <img class="px-3  science-icon" src="<?php echo get_stylesheet_directory_uri() . "/assets/icons/comment-medical-solid.svg";?>" alt="...">
+              </div>
+              <div class="col-md-9">
+                <div class="card-body pt-0">
+                  <h5 class="card-title color-primary mb-3">Science You Can Trust</h5>
+                  <p class="card-text ">Assertively streamline cutting-edge paradigms vis-a-vis  display synergistic.</p>
 
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
       </div>
-  </div>
-</div>
-</div>
 
 
   </article>
   </section>
   <section class="container-fluid d-flex">
     <div class="flex-fill w-50 bg-primary d-flex flex-column justify-content-center align-items-middle">
-      <div class="container p-5 m-2 ">
-        <h1>Forward. Together.</h1>
-        <p>
-          Professionally transition seamless potentialities through sticky quality vectors. Dynamically leverage existing emerging methodologies and high standards in vortals. </p>
+      <div class="container p-5 ">
+        <h1 class="display-1 mb-4">Forward. Together.</h1>
 
-<p>Authoritatively myocardinate real-time imperatives whereas covalent materials. Interactively reinvent error-free ROI without holistic process improvements. Holisticly foster multimedia based markets without virtual e-markets.</p>
+<p class="pt-3">Authoritatively myocardinate real-time imperatives whereas covalent materials. Interactively reinvent error-free ROI without holistic process improvements. Holisticly foster multimedia based markets without virtual e-markets.</p>
 
 <p>Uniquely innovate strategic leadership skills for unique vortals. Interactively empower multimedia based initiatives without frictionless e-tailers. Continually repurpose end-to-end materials before high-payoff supply chains. Proactively empower bricks-and-clicks systems via premium processes. Collaboratively leverage existing economically sound e-business through high-quality mindshare.</p>
 
-<p>Competently impact leading-edge models before collaborative platforms. Dynamically create effective partnerships vis-a-vis dynamic models. Authoritatively pontificate excellent.</p>
-        </p>
       </div>
     </div>
     <div class="flex-fill bg-light w-50">
