@@ -153,10 +153,11 @@ function mmhf_scripts() {
 	wp_enqueue_script('mmhf-fontawesome', 'https://kit.fontawesome.com/87040b45a5.js', array());
 	wp_enqueue_script( 'mmhf-pbscripts', get_stylesheet_directory_uri() . '/js/pb-general-scripts.js', array(), true );
 	wp_enqueue_script( 'mmhf-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'mmhf-gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'mmhf-gsap-scrolltrigger', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'mmhf-gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js', array(), true );
+	wp_enqueue_script( 'mmhf-gsap-scrolltrigger', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js', array(), true );
 	wp_enqueue_script( 'mmhf-flickity', 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'mmhf-isotopes', 'https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'mmhf-gsap-scripts', get_stylesheet_directory_uri() . '/js/gsap-scripts.js', array(), true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
