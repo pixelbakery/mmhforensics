@@ -1,4 +1,4 @@
-import { UnrealBloomPass } from '//unpkg.com/three@0.123.0/examples/jsm/postprocessing/UnrealBloomPass.js';
+import { UnrealBloomPass } from './threejs/UnrealBloomPass.js';
 
 
 const deg2rad = deg => { return deg * Math.PI / 180; }

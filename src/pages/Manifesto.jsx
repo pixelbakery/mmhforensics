@@ -36,10 +36,10 @@ function Manifesto(){
           <p>The Centre for Perinatal Psychology and Forensics International is proud to share this article “Annulment of conviction in a case of pregnancy denial” regarding a case in Costa Rica:</p>
          <ul className="list-unstyled text-lg list-inline">
            <li className="list-inline-item mr-4 text-lg">
-              <a className="hover:text-white hover:opacity-90 text-lg" href="https://iboneolza.org/2021/10/18/negacion-del-embarazo-anulacion-de-condena/" target="_blank" rel="nofollow">Article in English</a>
+              <a className="hover:text-white hover:opacity-90 text-lg" href="https://iboneolza.org/en/2021/10/18/annulment-of-conviction-in-a-case-of-pregnancy-denial/ " target="_blank" rel="nofollow">Article in English</a>
             </li>
             <li className="list-inline-item mx-4">
-              <a href="https://iboneolza.org/en/2021/10/18/annulment-of-conviction-in-a-case-of-pregnancy-denial/" target="_blank" rel="nofollow">Article in Spanish</a>
+              <a href="https://iboneolza.org/2021/10/18/negacion-del-embarazo-anulacion-de-condena/" target="_blank" rel="nofollow">Article in Spanish</a>
             </li>
           </ul>
 

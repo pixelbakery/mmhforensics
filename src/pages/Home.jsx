@@ -1,7 +1,10 @@
 import React, {useEffect, Component} from 'react'
 import {appendScript} from '../js/appendBloom'
 import {removeScript} from '../js/removeBloom'
-import { UnrealBloomPass } from '//unpkg.com/three@0.123.0/examples/jsm/postprocessing/UnrealBloomPass.js';
+import ForceGraph3D from '3d-force-graph'
+
+import { UnrealBloomPass } from 'https://unpkg.com/three@0.123.0/examples/jsm/postprocessing/UnrealBloomPass.js';
+
 import Modal from '../components/modal';
 function generateLinks(nodes) {
     let links = [];
@@ -35,27 +38,19 @@ const nodes = [...Array(N).keys()].map(i => {
 
 const links = generateLinks(nodes);
 const gData = {nodes, links};
-
 const distance = 1500;
-
 const graphElem = document.getElementById("3d-graph");
-
 const Graph = ForceGraph3D()(graphElem);
 Graph.enableNodeDrag(false);
 Graph.enableNavigationControls(false);
 Graph.enablePointerInteraction(false);
 Graph.showNavInfo(false);
-
 Graph.cameraPosition({ z: distance, x: distance });
-
 Graph.nodeRelSize(4);
 Graph.nodeOpacity(.8);
-
 Graph.linkWidth(5);
-
 Graph.linkDirectionalParticles(5);
 Graph.linkDirectionalParticleWidth(5);
-
 const bloomPass = new UnrealBloomPass();
 bloomPass.strength = 3;
 bloomPass.radius = 1;
@@ -87,26 +82,23 @@ window.addEventListener('resize', e => {
 
 class Home extends Component {
     
-    constructor(props) {
-        super(props);
-        this.state = {
-          count: 0
-        };
-      }
 
       componentDidMount() {
+        // appendScript("https://unpkg.com/3d-force-graph@1.66.6/dist/3d-force-graph.min.js");
         RenderTheStuff();
-        console.log("mounted");
+        // console.log("mounted");
         
       }
       componentDidUpdate() {
-          console.log("updated");
-          RenderTheStuff();
+        //   console.log("updated");
+        // appendScript("https://unpkg.com/3d-force-graph@1.66.6/dist/3d-force-graph.min.js");
+        RenderTheStuff();
         
         
       }
       componentWillUnmount(){
-        console.log("unmounted");
+        // removeScript("https://unpkg.com/3d-force-graph@1.66.6/dist/3d-force-graph.min.js");
+        // console.log("unmounted");
        
       }
 
@@ -138,36 +130,8 @@ class Home extends Component {
                   <h1 className="display-1"><span className="underline">International</span></h1>
           </div>
 
-          <div className="py-1">
-
-            
-            <p className="lead text "><a data-toggle="modal" data-target="#exampleModal">Enter your email</a> for updates and news.</p>
-          </div>
       </div>
-            <div id="yourAppElement"></div>
-   
-        <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div className="modal-dialog modal-dialog-centered">
-            <div className="modal-content">
-              <div className="modal-header">
-                  <h5 className="modal-title" id="exampleModalLabel">Enter Your Email</h5>
-                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div className="modal-body">
-            
-                <div id="mc_embed_signup">
-       
-
-                </div>
-                {/* <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-       */}
-              </div>
-            </div>
-          </div>
-        </div>
-        
+          
     </main>
   
   </div>
@@ -176,3 +140,26 @@ class Home extends Component {
     }
 }
 export default Home
+
+
+// <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+// <div className="modal-dialog modal-dialog-centered">
+//   <div className="modal-content">
+//     <div className="modal-header">
+//         <h5 className="modal-title" id="exampleModalLabel">Enter Your Email</h5>
+//       <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+//         <span aria-hidden="true">&times;</span>
+//       </button>
+//     </div>
+//     <div className="modal-body">
+  
+//       <div id="mc_embed_signup">
+
+
+//       </div>
+//       {/* <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+// */}
+//     </div>
+//   </div>
+// </div>
+// </div>

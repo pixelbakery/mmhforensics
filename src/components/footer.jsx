@@ -11,7 +11,7 @@ function Footer(){
                         <small>Copyright © {d.getFullYear()} <br/>THE CENTRE FOR PERINATAL PSYCHOLOGY
             AND FORENSICS INTER­NATIONAL,<br /> All Rights Reserved.</small>
                         <p className="small">
-                            <small>Website designed by <a href="pixelbakery.com" target="_blank">Pixel Bakery</a>.</small>
+                            <small>Website designed by <a href="https://pixelbakery.com" target="_blank">Pixel Bakery</a>.</small>
                         </p>
                     </div>
                 </div>
