@@ -26,6 +26,23 @@ function Manifesto(){
           <p className="mb-3">
             On occasion of the execution of Lisa Montgomery, from the <a className="text-link" href="http://www.sociedadmarce.org/" target="_blank" rel="noopener">Marcé Spanish Society of Perinatal Mental Health (MARES)</a>, the <a className="text-link" href="http://www.asociacionpsicologiaperinatal.es/" target="_blank" rel="noopener">Spanish Association of Perinatal Psychology (AEPP)</a>, and the <a className="text-link" href="https://mmhforensics.org/" target="_blank" rel="noopener">Centre for Perinatal Psychology and Forensics International (CPPFI)</a> without forgetting the pain of the family of the victim of such an atrocious death, Bobbie Jo Stinnett, we express our rejection and outrage with regard to the conviction that led to the execution of Lisa Montgomery, a woman who at the time of committing the crime suffered from severe mental disorders. This federal execution violates the right to consider the seriousness of the mental illness at the time of commission of the criminal act and abuses by authoritarian power, by not considering the research underscoring the role of childhood traumas, and the physical, psychological, and environmental conditions of the person.
           </p>
+
+          <div className="border border-white rounded-md my-6 cta-box">
+            <h4 className="text-xl mb-3 font-bold">This article was published to speak out about CPPFI's position on this matter</h4>
+            <p className="py-0 mt-4 mb-2">Further readings at theconversation.com:<br/>
+            <a href="https://theconversation.com/criminal-justice-needs-a-better-understanding-of-childhood-trauma-153848" target="_blank" rel="external">Criminal justice needs a better understanding of childhood trauma</a></p>
+          </div>
+
+          <p>The Centre for Perinatal Psychology and Forensics International is proud to share this article “Annulment of conviction in a case of pregnancy denial” regarding a case in Costa Rica:</p>
+         <ul className="list-unstyled text-lg list-inline">
+           <li className="list-inline-item mr-4 text-lg">
+              <a className="hover:text-white hover:opacity-90 text-lg" href="https://iboneolza.org/2021/10/18/negacion-del-embarazo-anulacion-de-condena/" target="_blank" rel="nofollow">Article in English</a>
+            </li>
+            <li className="list-inline-item mx-4">
+              <a href="https://iboneolza.org/en/2021/10/18/annulment-of-conviction-in-a-case-of-pregnancy-denial/" target="_blank" rel="nofollow">Article in Spanish</a>
+            </li>
+          </ul>
+
         </article>
       </div>
     </div>

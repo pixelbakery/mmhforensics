@@ -2,7 +2,7 @@ import React, {useEffect, Component} from 'react'
 import {appendScript} from '../js/appendBloom'
 import {removeScript} from '../js/removeBloom'
 import { UnrealBloomPass } from '//unpkg.com/three@0.123.0/examples/jsm/postprocessing/UnrealBloomPass.js';
-
+import Modal from '../components/modal';
 function generateLinks(nodes) {
     let links = [];
     nodes.forEach(node => {
@@ -144,8 +144,8 @@ class Home extends Component {
             <p className="lead text "><a data-toggle="modal" data-target="#exampleModal">Enter your email</a> for updates and news.</p>
           </div>
       </div>
-
-      
+            <div id="yourAppElement"></div>
+   
         <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content">
