@@ -1,0 +1,335 @@
+@import url("https://use.typekit.net/szh1sod.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+    margin: 0;
+
+    min-height: 100vh;
+    font-size: 16px;
+    overflow-x: hidden;
+    background-color: #000011;
+    color: #fff;
+    font-family: Helvetica;
+}
+html, body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+main{
+      max-width: 100%;
+      overflow-x: hidden;
+}
+a,
+a:visited,
+a:focus,
+a:active,
+a.text-link,
+a.text-link:visited,
+a.text-link:active,
+a.text-link:focus{
+  text-decoration: none;
+  color: hsla(216, 15%, 90%, .90);
+}
+.breaker{
+  width: 33%;
+  height: 2px;
+  background-color: #fff;
+
+}
+.navbar-toggler{
+  border: 1px solid #fff;
+  border-radius: 8px;
+  color: #fff;
+  padding-top: 8px;
+  padding-bottom: 5px;
+  z-index: 9999;
+  outline: 0;
+  border-width: 1px;
+  transition: all .33s ease;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active{
+  outline: 0;
+  border-width: 1px;
+}
+.navbar-toggler:not(.collapsed){
+
+}
+.navbar-collapse{
+
+  background-color: rgba(0,0,0,0);
+    transition: all .33s ease;
+}
+.navbar-collapse.collapsing,
+.navbar-collapse.show{
+margin-top: -55px;
+/* margin-right: 10px;
+margin-left: 10px; */
+  background-color: rgba(0,0,0,1);
+  opacity: 1;
+text-align:center;
+padding: 25%;
+overflow: hidden;
+height: 100vh;
+
+
+
+}
+.navbar-toggler .icon{
+  margin:5px;
+}
+/* nav-icon-5 */
+.nav-icon-5{
+  width: 35px;
+  height: 20px;
+  margin-top: 5px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+.nav-icon-5 span{
+  background-color:#fff;
+  position: absolute;
+  border-radius: 1px;
+  transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+  width:100%;
+  height: 2px;
+  transition-duration: 500ms
+}
+.nav-icon-5 span:nth-child(1){
+  top:0px;
+  left: 0px;
+}
+.nav-icon-5 span:nth-child(2){
+  top:9px;
+  left: 0px;
+  opacity:1;
+}
+.nav-icon-5 span:nth-child(3){
+  bottom:0px;
+  left: 0px;
+}
+.nav-icon-5:not(.open):hover span:nth-child(1){
+  transform: rotate(-3deg) scaleY(1.1);
+}
+.nav-icon-5:not(.open):hover span:nth-child(2){
+  transform: rotate(3deg) scaleY(1.1);
+}
+.nav-icon-5:not(.open):hover span:nth-child(3){
+  transform: rotate(-4deg) scaleY(1.1);
+}
+.nav-icon-5.open span:nth-child(1){
+  transform: rotate(45deg);
+  top: 8px;
+}
+.nav-icon-5.open span:nth-child(2){
+  opacity:0;
+}
+.nav-icon-5.open span:nth-child(3){
+  transform: rotate(-45deg);
+  top: 8px;
+}
+h1, h2, h3 {
+  text-rendering: optimizeLegibility;
+}
+p{
+  font-family: 'Poppins', sans-serif;
+font-size: 18px;
+  line-height: 1.66em;
+  padding-bottom: 1em;
+}
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+header ul{
+  list-style: none;
+  color: #fff;
+}
+header ul li.nav-item a{
+  border-bottom: 2px solid hsla(216, 100%, 100%, 0.0);
+  color: #fff;
+  font-family: 'latino-urw', serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-top: 16px;
+  transition: all ease .33s;
+
+}
+header ul li.nav-item a.active{
+  border-bottom: 2px solid hsla(216, 100%, 100%, 1);
+}
+header ul li.nav-item a:hover{
+  border-bottom: 2px solid hsla(216, 100%, 100%, 1);
+  color: #fff;
+}
+.graph{
+  position: absolute;
+   top: 0px;
+   width: 85vw;
+   height: 100vh;
+   left: 15%;
+    z-index: -1;
+}
+@media (max-width: 991.98px) {
+  .graph{
+    left: 0%;
+  }
+}
+h1{
+    font-family: latino-urw, serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1.666em;
+    line-height: 98%;
+}
+h1.display-1{
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 95%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+h1.span{
+    background-color: #000011;
+}
+span.underline{
+    padding-bottom: 1rem;
+    border-bottom: 5px solid white;
+}
+.title-holder{
+  position: relative;
+    display: inline-block;
+}
+.title-holder:after{
+  position: absolute;
+  content: 'Dr. Gina Wong, Director';
+  font-family: 'latino-urw', serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.33em;
+
+  bottom: -80px;
+}
+h3{
+
+    font-family: 'latino-urw', serif;
+    font-weight: 700;
+    font-style: normal;
+}
+@media (max-width: 575.98px) {
+  body{
+    height: 100vh;
+  }
+    h1{
+        font-size: 1em;
+    }
+    h1.display-1{
+        font-size: 1.4em;
+    }
+}
+@media (max-width: 767.98px) {
+  body{
+    height: 100vh;
+  }
+    h1{
+        font-size: 1.23em;
+    }
+    h1.display-1{
+        font-size: 1.8em;
+    }
+}
+@media (max-width: 991.98px) {
+  body{
+    height: 100vh;
+  }
+    h1{
+        font-size: 1.44em;
+    }
+    h1.display-1{
+        font-size: 2.88em;
+    }
+}
+
+
+main.container{
+    top:0px;
+    left: 0px;
+    position: absolute;
+    z-index: 8888;
+    height: 100vh;
+}
+
+a{
+    border-bottom: 2.5px solid white;
+
+    opacity: 100%;
+}
+a:hover{
+    cursor: pointer;
+    opacity: 75%;
+}
+.modal-content{
+    background-color: #000011;
+    border: 2.5px solid white;
+    border-radius: 0px;
+
+}
+.modal-header{
+    border-bottom-width: 0px;
+}
+.close, .close:hover{
+    color: white;
+    text-shadow: rgb(255, 255, 255) 0px 0px 0px;
+    opacity: 100%;
+}
+.button{
+    border-radius: 0px;
+    background-color: white;
+}
+.skrim{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 5555;
+    background-color: #000011;
+    opacity: 40%;
+}
+.btn.btn-primary{
+  border: 1px solid #fff;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #fff;
+  padding: .75em 1.22em .75em 1.22em;
+  transition: all .22s ease;
+  font-weight: bold;
+}
+.btn.btn-primary:hover{
+  transform: translateY(-.15em);
+  /* background-color: #fff;
+  color: black; */
+  border: 3px solid #fff;
+}
+input.teamform{
+  background-color: rgba(255, 0, 0, 0.0);
+  border-color: 1px solid #fff;
+  border-radius: 8px;
+  color: #fff;
+}
+input.form-control.teamform:focus{
+  outline: 0;
+  background-color: rgba(255, 0, 0, 0.0);
+  color: #fff;
+}
+footer{
+  height: 33vh;
+}
